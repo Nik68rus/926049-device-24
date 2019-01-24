@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Никита Ларичкин](https://up.htmlacademy.ru/htmlcss/24/user/926049).
-* Наставник: `Неизвестно`.
+* Наставник: [Александр Кошара](https://htmlacademy.ru/profile/rednaxxxela).
 
 ---
 
