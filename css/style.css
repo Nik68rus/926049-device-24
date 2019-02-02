@@ -1,0 +1,84 @@
+@font-face {
+  font-family: "Gilroy";
+  src: url("/fonts/gilroyextrabold.woff2") format("woff2"),
+  src: url("/fonts/gilroyextrabold.woff") format("woff");
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("/fonts/gilroylight.woff2") format("woff2"),
+  src: url("/fonts/gilroylight.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+	padding: 0;
+	font-family: "Open Sans", "Arial", sans-serif;
+	font-size: 15px;
+	line-height: 30px;
+  font-weight: 300;
+  font-style: normal;
+	color: #464646;
+	background-color: #ffffff;
+}
+
+.list-style {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.not-show {
+  display: none;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	white-space: nowrap;
+	-webkit-clip-path: inset(100%);
+			clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
+
+.header-logo {
+  font-size: 48px;
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.user-navigation a {
+  color: #000000;
+  text-decoration: none;
+}
+
+.site-navigation a {
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #000000;
+  text-decoration: none;
+}
+
+.slide-heading {
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-weight: 800;
+  font-size: 47px;
+  line-height: 56px;
+  color: #000000;
+}
