@@ -82,3 +82,35 @@ input[type="radio"].visually-hidden {
   line-height: 56px;
   color: #000000;
 }
+
+.button {
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.slide-table tr:first-of-type {
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-weight: 300;
+  font-size: 36px;
+  line-height: 48px;
+  color: #000000;
+}
+
+.slide-table tr:last-of-type {
+  font-size: 13px;
+  line-height: 20px;
+}
+
+.categories a {
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+  text-decoration: none;
+}
