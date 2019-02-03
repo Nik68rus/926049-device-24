@@ -52,12 +52,21 @@ input[type="radio"].visually-hidden {
 	overflow: hidden;
 }
 
-.header-logo {
-  font-size: 48px;
+.gilroy-font {
   font-family: "Gilroy", "Arial", sans-serif;
   font-weight: 800;
-  text-transform: uppercase;
+  font-size: 47px;
+  line-height: 48px;
   color: #000000;
+}
+
+header {
+  background-color: #f0c52e;
+}
+
+.header-logo {
+  font-size: 48px;
+  text-transform: uppercase;
 }
 
 .user-navigation a {
@@ -66,8 +75,6 @@ input[type="radio"].visually-hidden {
 }
 
 .site-navigation a {
-  font-family: "Gilroy", "Arial", sans-serif;
-  font-weight: 800;
   font-size: 18px;
   line-height: 24px;
   text-transform: uppercase;
@@ -76,11 +83,7 @@ input[type="radio"].visually-hidden {
 }
 
 .slide-heading {
-  font-family: "Gilroy", "Arial", sans-serif;
-  font-weight: 800;
-  font-size: 47px;
   line-height: 56px;
-  color: #000000;
 }
 
 .button {
@@ -94,11 +97,8 @@ input[type="radio"].visually-hidden {
 }
 
 .slide-table tr:first-of-type {
-  font-family: "Gilroy", "Arial", sans-serif;
   font-weight: 300;
   font-size: 36px;
-  line-height: 48px;
-  color: #000000;
 }
 
 .slide-table tr:last-of-type {
@@ -107,10 +107,53 @@ input[type="radio"].visually-hidden {
 }
 
 .categories a {
-  font-family: "Gilroy", "Arial", sans-serif;
-  font-weight: 800;
   font-size: 18px;
   line-height: 24px;
-  color: #000000;
   text-decoration: none;
 }
+
+.service-slider {
+  background-color: #e5e5e5;
+}
+
+.service-slider-controls label {
+  font-size: 18px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.delivery-services {
+  font-size: 16px;
+  line-height: 40px;
+}
+
+footer {
+  background-color: #464646;
+  color: #ffffff;
+}
+
+.footer-logo {
+  color: #ffc600;
+  font-size: 48px;
+  text-transform: uppercase;
+}
+
+.footer-user-navigation a {
+  line-height: 36px;
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: none;
+}
+
+.footer-site-navigation a {
+  font-size: 18px;
+  line-height: 24px;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.phone {
+  color: #ffffff;
+  text-decoration: none;
+}
+
