@@ -61,12 +61,13 @@ input[type="radio"].visually-hidden {
 }
 
 header {
-  background-color: #f0c52e;
+  background-color: rgba(240, 197, 46, 0.5);
 }
 
 .header-logo {
   font-size: 48px;
   text-transform: uppercase;
+  text-decoration: none;
 }
 
 .user-navigation a {
@@ -136,6 +137,7 @@ footer {
   color: #ffc600;
   font-size: 48px;
   text-transform: uppercase;
+  text-decoration: none;
 }
 
 .footer-user-navigation a {
@@ -157,3 +159,96 @@ footer {
   text-decoration: none;
 }
 
+/*---------Страница каталога---------*/
+
+.user-navigation .sign-out-link {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.breadcrumbs a {
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(0, 0, 0, 0.3);
+  text-decoration: none;
+}
+
+.filters h2 {
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 3.2px;
+  text-transform: uppercase;
+}
+
+.filter-legend {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.price-controls {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 300;
+  color: rgba(0, 0, 0, 0.2);
+}
+
+.price-controls input {
+  border: none;
+  background-color: transparent;
+  color: rgba(0, 0, 0, 0.2);
+}
+
+.color-filters, .bluetooth-filters {
+  font-size: 14px;
+  line-height: 40px;
+  color: #000000;
+}
+
+.sorting h3 {
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 3.2px;
+  text-transform: uppercase;
+}
+
+.sorting-button {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.3);
+  text-decoration: none;
+}
+
+.sorting-button-curent {
+  color: #000000;
+}
+
+.device-name {
+  font-size: 18px;
+  line-height: 24px;
+  text-decoration: none;
+}
+
+.price {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 300;
+  color: #464646;
+}
+
+.catalog-pagination a {
+  font-family: "Gilroy", "Arial", sans-serif;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 24px;
+  color: #000000;
+}
+
+.page a {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.footer-user-navigation .sign-out-link {
+  color: rgba(255, 255, 255, 0.3);
+}

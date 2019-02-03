@@ -3,8 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Интернет-магазин гаджетов «Девайс»</title>
-		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
-		<link href="css/normalize.css" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&amp;subset=cyrillic" rel="stylesheet">		<link href="css/normalize.css" rel="stylesheet">
 		<link href="css/style.css" rel="stylesheet">
 	</head>
 	<body>
@@ -13,17 +12,17 @@
 			<nav class="user-navigation">
 				<form class="search-form" action="https://echo.htmlacademy.ru" method="post">
 					<input class="form-field" type="search" name="search" placeholder="Поиск по сайту">
-					<button class="button" type="submit">Найти</button>
+					<button type="submit">Найти</button>
 				</form>
 				<ul class="user-navigation-list list-style">
 					<li><a href="#">Валентин Петухов</a></li>
-					<li><a href="#">Выйти</a></li>
+					<li><a class="sign-out-link" href="#">Выйти</a></li>
 					<li><a href="#">Сравнить</a></li>
 					<li><a href="#">Корзина</a></li>
 				</ul>
 			</nav>
 			<nav class="site-navigation">
-				<ul class="site-navigation-list list-style">
+				<ul class="site-navigation-list list-style gilroy-font">
 					<li>
 						<a href="#">Каталог товаров</a>
 						<div class="catalog-menu not-show">
@@ -44,17 +43,17 @@
 			</nav>
 		</header>
 
-		<main>
-			<h1>Моноподы для селфи</h1>
+		<main class="inner-page">
+			<h1 class="gilroy-font">Моноподы для селфи</h1>
 			<ul class="breadcrumbs list-style">
 				<li><a href="index.html">Главная</a></li>
 				<li><a href="#">Каталог товаров</a></li>
 				<li><a>Моноподы для селфи</a></li>
 			</ul>
 			<section class="filters">
-				<h2>Фильтр:</h2>
+				<h2 class="gilroy-font">Фильтр:</h2>
 				<form class="filter-form" action="https://echo.htmlacademy.ru" method="post">
-					<div class="filter-fieldset">
+					<div class="filter-fieldset gilroy-font">
 						<p class="filter-legend">Стоимость</p>
 						<div class="range-filter">
 							<div class="range-controls">
@@ -77,7 +76,7 @@
 						</div>
 					</div>
 					<div class="filter-fieldset">
-						<p class="filter-legend">Цвет</p>
+						<p class="filter-legend gilroy-font">Цвет</p>
 						<ul class="color-filters list-style">
 							<li>
 								<label>
@@ -112,7 +111,7 @@
 						</ul>
 					</div>
 					<div class="filter-fieldset">
-						<p class="filter-legend">Bluetooth</p>
+						<p class="filter-legend gilroy-font">Bluetooth</p>
 						<ul class="bluetooth-filters list-style">
 							<li>
 								<input class="visually-hidden" type="radio" name="bluetooth" value="yes" id="bluetooth-yes" checked>
@@ -131,9 +130,9 @@
 			<section class="catalog">
 				<h2 class="visually-hidden">Каталог товаров</h2>
 				<div class="sorting">
-					<h3>Сортировка:</h3>
+					<h3 class="gilroy-font">Сортировка:</h3>
 					<ul class="sorting-type-list list-style">
-						<li><a class="sorting-button sorting-buton-curent">По цене</a></li>
+						<li><a class="sorting-button sorting-button-curent">По цене</a></li>
 						<li><a class="sorting-button" href="#">По типу</a></li>
 						<li><a class="sorting-button" href="#">По популярности</a></li>
 					</ul>
@@ -144,8 +143,8 @@
 				</div>
 				<article>
 					<img src="img/item-1.jpg" width="360" height="380" alt="Любительская селфи-палка">
-					<h3><a class="device-name" href="#">Любительская селфи-палка</a></h3>
-					<p class="price">500 руб.</p>
+					<h3><a class="device-name gilroy-font" href="#">Любительская селфи-палка</a></h3>
+					<p class="price gilroy-font">500 руб.</p>
 					<div class="catalog-item-buttons not-show">
 						<button class="button" type="button">В корзину</button>
 						<button class="compare-button" type="button">Добавить к сравнению</button>
@@ -153,8 +152,8 @@
 				</article>
 				<article>
 					<img src="img/item-2.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
-					<h3><a class="device-name" href="#">Профессиональная селфи-палка</a></h3>
-					<p class="price">1 500 руб.</p>
+					<h3><a class="device-name gilroy-font" href="#">Профессиональная селфи-палка</a></h3>
+					<p class="price gilroy-font">1 500 руб.</p>
 					<div class="catalog-item-buttons not-show">
 						<button class="button" type="button">В корзину</button>
 						<button class="compare-button" type="button">Добавить к сравнению</button>
@@ -162,8 +161,8 @@
 				</article>
 				<article>
 					<img src="img/item-3.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
-					<h3><a class="device-name" href="#">Непотопляемая селфи-палка</a></h3>
-					<p class="price">2 500 руб.</p>
+					<h3><a class="device-name gilroy-font" href="#">Непотопляемая селфи-палка</a></h3>
+					<p class="price gilroy-font">2 500 руб.</p>
 					<div class="catalog-item-buttons not-show">
 						<button class="button" type="button">В корзину</button>
 						<button class="compare-button" type="button">Добавить к сравнению</button>
@@ -171,8 +170,8 @@
 				</article>
 				<article>
 					<img src="img/item-4.jpg" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
-					<h3><a class="device-name" href="#">Селфи-палка «Следуй за мной»</a></h3>
-					<p class="price">4 900 руб.</p>
+					<h3><a class="device-name gilroy-font" href="#">Селфи-палка «Следуй за мной»</a></h3>
+					<p class="price gilroy-font">4 900 руб.</p>
 					<div class="catalog-item-buttons not-show">
 						<button class="button" type="button">В корзину</button>
 						<button class="compare-button" type="button">Добавить к сравнению</button>
@@ -181,7 +180,7 @@
 				<div class="catalog-pagination">
 					<a class="pagination-prev" href="#">Назад</a>
 					<ul class="page-list list-style">
-						<li class="page page-curent"><a >1</a></li>
+						<li class="page-curent"><a >1</a></li>
 						<li class="page"><a href="#">2</a></li>
 						<li class="page"><a href="#">3</a></li>
 					</ul>
@@ -191,15 +190,15 @@
 		</main>
 
 		<footer>
-			<a class="footer-logo" href="#">Device</a>
+			<a class="footer-logo gilroy-font" href="#">Device</a>
 			<ul class="footer-user-navigation list-style">
 				<li><a href="#">Валентин Петухов</a></li>
-				<li><a href="#">Выйти</a></li>
+				<li><a class="sign-out-link" href="#">Выйти</a></li>
 				<li><a href="#">Сравнить</a></li>
 				<li><a href="#">Корзина</a></li>
 			</ul>
 			<p>г. Москва, ул. Строителей, 15</p>
-			<ul class="footer-site-navigation list-style">
+			<ul class="footer-site-navigation list-style gilroy-font">
 				<li><a href="#">Доставка</a></li>
 				<li><a href="#">Гарантия</a></li>
 				<li><a href="#">Контакты</a></li>
