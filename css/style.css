@@ -249,6 +249,7 @@ footer {
 	color: #ffffff;
 	text-transform: uppercase;
 	text-decoration: none;
+	letter-spacing: 3.6px;
 }
 
 .phone {
@@ -377,4 +378,31 @@ footer {
 
 .header-logo:active, .footer-logo:active {
 	opacity: 0.3;
+}
+
+.footer-user-navigation a:hover,
+.footer-user-navigation a:focus {
+	color: #ffffff;
+}
+
+.footer-user-navigation a:active {
+	color: rgba(255, 255, 255, 0.3);
+}
+
+.footer-site-navigation a:hover,
+.footer-site-navigation a:focus {
+	color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-site-navigation a:active {
+	color: rgba(255, 255, 255, 0.3);
+}
+
+.breadcrumbs a:hover,
+.breadcrumbs a:focus {
+	color: rgba(0, 0, 0, 0.6);
+}
+
+.breadcrumbs a:active {
+	color: rgba(0, 0, 0, 0.1);
 }
