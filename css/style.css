@@ -1,17 +1,29 @@
 @font-face {
 	font-family: "Gilroy";
-	src: url("/fonts/gilroyextrabold.woff2") format("woff2"),
-	src: url("/fonts/gilroyextrabold.woff") format("woff");
+	src: url("../fonts/gilroyextrabold.woff2") format("woff2"),
+	url("../fonts/gilroyextrabold.woff") format("woff");
 	font-weight: 800;
-	font-style: normal;
 }
 
 @font-face {
 	font-family: "Gilroy";
-	src: url("/fonts/gilroylight.woff2") format("woff2"),
-	src: url("/fonts/gilroylight.woff") format("woff");
+	src: url("../fonts/gilroylight.woff2") format("woff2"),
+	url("../fonts/gilroylight.woff") format("woff");
 	font-weight: 300;
-	font-style: normal;
+}
+
+@font-face {
+	font-family: "Open Sans";
+	src: url("../fonts/opensanslight.woff2"), 
+	url("../fonts/opensanslight.woff");
+	font-weight: 300;
+}
+
+@font-face {
+	font-family: "Open Sans";
+	src: url("../fonts/opensans.woff2"), 
+	url("../fonts/opensans.woff");
+	font-weight: 400;
 }
 
 body {
@@ -60,7 +72,7 @@ input[type="radio"].visually-hidden {
 	color: #000000;
 }
 
-header {
+.main-header {
 	background-color: rgba(240, 197, 46, 0.5);
 }
 
@@ -225,7 +237,7 @@ header {
 	line-height: 40px;
 }
 
-footer {
+.main-footer {
 	background-color: #464646;
 	color: #ffffff;
 }
@@ -300,7 +312,8 @@ footer {
 	color: rgba(0, 0, 0, 0.2);
 }
 
-.color-filters, .bluetooth-filters {
+.color-filters, 
+.bluetooth-filters {
 	font-size: 14px;
 	line-height: 40px;
 	color: #000000;
@@ -372,11 +385,13 @@ footer {
 
 /*---------styleguide---------*/
 
-.header-logo:hover, .footer-logo:hover {
+.header-logo:hover, 
+.footer-logo:hover {
 	opacity: 0.6;
 }
 
-.header-logo:active, .footer-logo:active {
+.header-logo:active, 
+.footer-logo:active {
 	opacity: 0.3;
 }
 
