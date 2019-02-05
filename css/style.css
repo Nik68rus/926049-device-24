@@ -599,6 +599,28 @@ input[type="radio"].visually-hidden {
 	color: rgba(0, 0, 0, 0.2);
 }
 
+.new::after {
+	content: "New";
+	border-radius: 50%;
+	border: 2px solid rgba(0, 0, 0, 0.1);
+	position: absolute;
+	width: 60px;
+	height: 60px;
+	top: 0;
+	right: 0;
+	font-family: "Gilroy", "Arial", sans-serif;
+	text-transform: uppercase;
+	font-size: 14px;
+	font-weight: 800;
+	line-height: 24px;
+	letter-spacing: 0.7px;
+	text-align: center;
+	padding-top: 16px;
+	box-sizing: border-box;
+	color: rgba(0, 0, 0, 0.2);
+
+}
+
 .logo {
 	filter: grayscale(100%);
 	opacity: 0.2;
