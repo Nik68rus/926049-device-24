@@ -213,6 +213,20 @@ input[type="radio"].visually-hidden {
 	font-size: 36px;
 }
 
+.promo-slider-list {
+	counter-reset: slider 0;
+}
+
+.promo-slider-list li::before {
+	counter-increment: slider;
+	content: counter(slider);
+	font-family: "Gilroy", "Arial", sans-serif;
+	font-weight: 800;
+	font-size: 179px;
+	line-height: 179px;
+	letter-spacing: 1.79px;
+}
+
 .slide-table tr:last-of-type {
 	font-size: 13px;
 	line-height: 20px;
