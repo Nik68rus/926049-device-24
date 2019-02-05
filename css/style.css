@@ -202,6 +202,7 @@ input[type="radio"].visually-hidden {
 .button:hover,
 .button:focus {
 	background-color: #f0c52e;
+	color: #000000;
 }
 
 .button:active {
@@ -606,4 +607,9 @@ input[type="radio"].visually-hidden {
 .logo:hover {
 	filter: grayscale(0%);
 	opacity: 1;
+}
+
+.curent-slide {
+	background-color: #000000;
+	color: #f7e184;
 }
