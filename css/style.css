@@ -176,21 +176,27 @@ input[type="radio"].visually-hidden {
 	font-weight: 800;
 	font-size: 18px;
 	line-height: 24px;
+	letter-spacing: 3.6px;
 	color: #000000;
 	text-transform: uppercase;
 	text-decoration: none;
 	position: relative;
+	border: none;
+	background-color: transparent;
+	cursor: pointer;
+	z-index: 5;
 }
 
 .button::before {
 	content: "";
 	left: 1px;
 	right: 1px;
-	bottom: 8px;
+	bottom: calc(50% - 4px);
 	height: 8px;
 	z-index: -1;
 	background-color: #f0c52e;
 	position: absolute;
+	z-index: -5;
 }
 
 .button:hover,
@@ -348,6 +354,52 @@ input[type="radio"].visually-hidden {
 	color: #000000;
 }
 
+.sorting-button[href]:hover,
+.sorting-button[href]:focus {
+	color: rgba(0, 0, 0, 0.6);
+}
+
+.sorting-button[href]:active {
+	color: #000000;
+}
+
+.sorting-dir-button {
+	position: relative;
+	font-size: 0;
+	padding-left: 11px;
+}
+
+.sorting-dir-button::before {
+	content: "";
+	position: absolute;
+	width: 11px;
+	height: 10px;
+	left: 0px;
+	opacity: 0.2;
+}
+
+.sorting-dir-button:hover[href]::before,
+.sorting-dir-button:focus[href]::before {
+	opacity: 0.4;
+}
+
+.sorting-dir-button:active[href]::before {
+	opacity: 1;
+}
+
+.sorting-dir-up::before {
+	background-image: url("../img/sort-up.svg");
+}
+
+.sorting-dir-down::before {
+	background-image: url("../img/sort-down.svg");
+}
+
+.sorting-dir-curent::before {
+	opacity: 1;
+}
+
+
 .device-name {
 	font-size: 18px;
 	line-height: 24px;
@@ -372,11 +424,31 @@ input[type="radio"].visually-hidden {
 	font-size: 16px;
 	font-weight: 800;
 	line-height: 24px;
+	letter-spacing: 3.2px;
 	color: #000000;
 }
 
 .page a {
 	color: rgba(0, 0, 0, 0.3);
+}
+
+.page-change:hover,
+.page-change:focus,
+.page-change:active {
+	background-color: rgba(0, 0, 0, 0.08);
+}
+
+.page-change:active {
+	color: rgba(0, 0, 0, 0.3);
+}
+
+.page:hover a,
+.page:focus a {
+	color: rgba(0, 0, 0, 0.6);
+}
+
+.page:active a {
+	color: #000000;
 }
 
 .footer-user-navigation .sign-out-link {
@@ -420,4 +492,104 @@ input[type="radio"].visually-hidden {
 
 .breadcrumbs a:active {
 	color: rgba(0, 0, 0, 0.1);
+}
+
+.academy-logo {
+	position: relative;
+	padding-left: 30px;
+	font-size: 0;
+}
+
+.academy-logo::before {
+	content: "";
+	width: 27px;
+	height: 36px;
+	position: absolute;
+	left: 0px;
+	background-image: url("../img/logo-html.svg");
+}
+
+.academy-logo:hover::before,
+.academy-logo:focus::before {
+	opacity: 0.6;
+}
+
+.academy-logo:active::before {
+	opacity: 0.3;
+}
+
+.social-button {
+	padding-left: 32px;
+	position: relative; 
+	font-size: 0;
+}
+
+.social-button::before {
+	content: "";
+	position: absolute;
+	width: 32px;
+	height: 32px;
+	left: 0;
+	top: 0;
+	opacity: 0.3;
+}
+
+.social-button:hover::before,
+.social-button:focus::before {
+	opacity: 0.6;
+}
+
+.social-button:active::before {
+	opacity: 0.1;
+}
+
+.social-fb::before {
+	background-image: url("../img/fb.svg");
+}
+
+.social-ig::before {
+	background-image: url("../img/ig.svg");
+}
+
+.social-tw::before {
+	background-image: url("../img/tw.svg");
+}
+
+.item-card {
+	position: relative;
+}
+
+.item-card:hover .catalog-item-buttons {
+	display: block;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 360px;
+	height: 380px;
+	background-color: rgba(238, 238, 238, 0.7);
+}
+
+.compare-button {
+	border: none;
+	background-color: transparent;
+	color: rgba(0, 0, 0, 0.5);
+}
+
+.compare-button:hover,
+.compare-button:focus {
+	color: #000000;
+}
+
+.compare-button:active {
+	color: rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+	filter: grayscale(100%);
+	opacity: 0.2;
+}
+
+.logo:hover {
+	filter: grayscale(0%);
+	opacity: 1;
 }
