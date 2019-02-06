@@ -189,8 +189,7 @@ input[type="radio"].visually-hidden {
 
 .button::before {
 	content: "";
-	left: 1px;
-	right: 1px;
+	width: 100%;
 	bottom: calc(50% - 4px);
 	height: 8px;
 	z-index: -1;
@@ -199,14 +198,21 @@ input[type="radio"].visually-hidden {
 	z-index: -5;
 }
 
-.button:hover,
-.button:focus {
-	background-color: #f0c52e;
+.button:hover::before,
+.button:focus::before {
 	color: #000000;
+	bottom: 0;
+  height: 100%;
+  transition-duration: 0.2s;
 }
 
 .button:active {
 	color: rgba(0, 0, 0, 0.3);
+}
+
+.slider-button:active {
+	background-color: #000000;
+	color: #f7e184;
 }
 
 .slide-table tr:first-of-type {
@@ -389,7 +395,7 @@ input[type="radio"].visually-hidden {
 	position: absolute;
 	width: 11px;
 	height: 10px;
-	left: 0px;
+	left: 0;
 	opacity: 0.2;
 }
 
@@ -520,8 +526,10 @@ input[type="radio"].visually-hidden {
 	width: 27px;
 	height: 36px;
 	position: absolute;
-	left: 0px;
+	left: 0;
+	top: -20px;
 	background-image: url("../img/logo-html.svg");
+	background-repeat: no-repeat;
 }
 
 .academy-logo:hover::before,
@@ -537,6 +545,7 @@ input[type="radio"].visually-hidden {
 	padding-left: 32px;
 	position: relative; 
 	font-size: 0;
+	cursor: pointer;
 }
 
 .social-button::before {
@@ -577,8 +586,8 @@ input[type="radio"].visually-hidden {
 .item-card:hover .catalog-item-buttons {
 	display: block;
 	position: absolute;
-	left: 0px;
-	top: 0px;
+	left: 0;
+	top: 0;
 	width: 360px;
 	height: 380px;
 	background-color: rgba(238, 238, 238, 0.7);
@@ -588,6 +597,7 @@ input[type="radio"].visually-hidden {
 	border: none;
 	background-color: transparent;
 	color: rgba(0, 0, 0, 0.5);
+	cursor: pointer;
 }
 
 .compare-button:hover,
