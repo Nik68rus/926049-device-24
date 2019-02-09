@@ -40,7 +40,8 @@ body {
 
 .container {
 	width: 1160px;
-	margin: 0 auto;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .list-style {
@@ -79,26 +80,25 @@ input[type="radio"].visually-hidden {
 
 .main-header {
 	box-sizing: border-box;
-	position: relative;
 	background-color: rgba(240, 197, 46, 0.5);
-	margin-top: 40px;
-	min-height: 299px;
+	box-shadow: inset 0 25px white; 
+	margin-top: 15px;
+	min-height: 210px;
 	padding-left: 60px;
-	padding-top: 50px; 
+	padding-right: 60px;
+	padding-bottom: 50px;  
 }
 
 .main-header h1 {
 	margin: 0;
 	padding: 0;
+	margin-bottom: 20px;
 }
 
 .header-logo {
-	position: absolute;
-	top: -20px;
-	font-size: 48px;
+	font-size: 49px;
 	text-transform: uppercase;
 	text-decoration: none;
-	width: 200px;
 }
 
 .search-form input {
@@ -240,19 +240,59 @@ input[type="radio"].visually-hidden {
 	font-size: 36px;
 }
 
+.promo-slider {
+	box-shadow: inset 0 110px rgba(240, 197, 46, 0.5);
+	padding-left: 60px;
+	padding-right: 60px;
+	padding-bottom: 105px;
+	position: relative;
+}
+
+.promo-slider-controls {
+	position: absolute;
+	right: 0;
+	bottom: 260px;
+}
+
 .promo-slider-list {
+	position: relative;
 	counter-reset: slider 0;
 }
 
 .promo-slider-list li::before {
+	position: absolute;
+	right: -15px;
+	top: -15px;
 	counter-increment: slider;
 	content: counter(slider);
 	font-family: "Gilroy", "Arial", sans-serif;
 	font-weight: 800;
-	color: #e5e5e5;
+	color: white;
 	font-size: 179px;
 	line-height: 179px;
 	letter-spacing: 1.79px;
+}
+
+.slide-image {
+	width: 50%;
+}
+
+.slide-image img {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.slide-data {
+	width: 50%;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 70px;
+}
+
+.slide-data h3 {
+	margin: 0;
+	padding: 0;
+	margin-bottom: 25px;
 }
 
 .slide-table tr:last-of-type {
@@ -260,6 +300,9 @@ input[type="radio"].visually-hidden {
 	line-height: 20px;
 }
 
+.categories {
+	padding-bottom: 80px;
+}
 .categories a {
 	font-size: 18px;
 	line-height: 24px;
@@ -273,11 +316,13 @@ input[type="radio"].visually-hidden {
 .service-slider {
 	width: 100%;
 	background-color: #e5e5e5;
+	padding-top: 70px;
+	padding-bottom: 140px;
 }
 
 .service-slider-wrapper {
 	display: flex;
-	margin-bottom: 105px;
+	position: relative;
 }
 
 .service-slider-controls {
@@ -291,15 +336,51 @@ input[type="radio"].visually-hidden {
 	width: 880px;
 }
 
+.service-slide h3 {
+	margin: 0;
+	padding: 0;
+	margin-bottom: 30px;
+}
+
+.service-slide p {
+	margin: 0;
+	padding: 0;
+}
+
+.service-slider-controls {
+	position: absolute;
+}
+
 .service-slider-controls label {
 	font-size: 18px;
 	line-height: 24px;
 	text-transform: uppercase;
 }
 
+.service-slider-list {
+	padding-left: 400px;
+	padding-right: 60px;
+}
+
+.service-slide {
+	padding-right: 250px;
+	position: relative;
+}
+
+.delivery-slide::after {
+	content: "";
+	position: absolute;
+	width: 136px;
+	height: 164px;
+	right: 0;
+	top: 0;
+	background-image: url(../img/delivery.png);
+}
+
 .delivery-services {
 	font-size: 16px;
 	line-height: 40px;
+	margin-bottom: 80px;
 }
 
 .main-footer {
@@ -716,7 +797,7 @@ input[type="radio"].visually-hidden {
 .user-nav-wrapper {
 	display: flex;
 	justify-content: space-between;
-	margin-bottom: 50px;
+	margin-bottom: 20px;
 }
 
 .search-form {
@@ -734,11 +815,11 @@ input[type="radio"].visually-hidden {
 	display: flex;
 	width: 1040px;
 	justify-content: space-between;
+	align-items: flex-start;
 	flex-wrap: wrap;
 }
 
 .index .site-navigation {
-	margin-bottom: 170px;
 }
 
 .inner-page .site-navigation {
@@ -747,20 +828,44 @@ input[type="radio"].visually-hidden {
 
 .slide-wrapper {
 	display: flex;
-	margin-bottom: 110px;
+	align-items: flex-start;
 }
 
 .categories-list {
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
-	margin-bottom: 155px;
+}
+
+.manufactures {
+	padding-top: 100px;
+	padding-bottom: 100px;
 }
 
 .manufactures-list {
 	display: flex;
 	justify-content: space-around;
 	flex-wrap: wrap;
+}
+
+.index-columns h2 {
+	margin: 0;
+	padding: 0;
+	margin-bottom: 50px;
+}
+
+.index-columns p {
+	margin: 0;
+	padding: 0;
+	margin-bottom: 40px;
+}
+
+.index-columns section {
+	padding-top: 50px;
+}
+
+.contacts img {
+	margin-bottom: 80px;
 }
 
 .about-us {
@@ -774,7 +879,7 @@ input[type="radio"].visually-hidden {
 .index-columns {
 	display: flex;
 	justify-content: space-between;
-	margin-bottom: 90px;
+	padding-bottom: 90px;
 }
 
 .footer-wrapper {
