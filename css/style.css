@@ -42,6 +42,8 @@ body {
 	width: 1160px;
 	margin-left: auto;
 	margin-right: auto;
+	padding-left: 20px;
+	padding-right: 20px;
 }
 
 .list-style {
@@ -336,10 +338,11 @@ input[type="radio"].visually-hidden {
 
 .service-slider {
 	width: 100%;
+	min-width: 1200px;
 	background-color: #e5e5e5;
 	box-shadow: inset 0 100px white;
 	padding-top: 70px;
-	padding-bottom: 140px;
+	padding-bottom: 70px;
 }
 
 .service-slider-wrapper {
@@ -378,6 +381,7 @@ input[type="radio"].visually-hidden {
 .service-slide p {
 	margin: 0;
 	padding: 0;
+	margin-bottom: 70px;
 }
 
 .service-slider-controls label {
@@ -428,9 +432,14 @@ input[type="radio"].visually-hidden {
 .main-footer {
 	background-color: #464646;
 	width: 100%;
+	min-width: 1200px;
 	color: #ffffff;
 	padding-top: 60px;
 	padding-bottom: 60px;
+}
+
+.main-footer p {
+	margin: 0;
 }
 
 .footer-logo {
@@ -694,7 +703,8 @@ input[type="radio"].visually-hidden {
 
 .academy-logo {
 	position: relative;
-	padding-left: 30px;
+	padding-left: 27px;
+	min-height: 36px;
 	font-size: 0;
 }
 
@@ -720,6 +730,7 @@ input[type="radio"].visually-hidden {
 
 .social-button {
 	padding-left: 32px;
+	min-height: 32px;
 	position: relative; 
 	font-size: 0;
 	cursor: pointer;
@@ -988,6 +999,7 @@ input[type="radio"].visually-hidden {
 
 .about-us {
 	width: 590px;
+	padding-right: 60px;
 }
 
 .contacts {
@@ -1009,6 +1021,7 @@ input[type="radio"].visually-hidden {
 .footer-line {
 	display: flex;
 	justify-content: space-between;
+	align-items: flex-start;
 }
 
 .usernav-line {
