@@ -43,159 +43,167 @@
 			</nav>
 		</header>
 
-		<main class="container">
-			<h1 class="gilroy-font">Моноподы для селфи</h1>
-			<ul class="breadcrumbs list-style">
-				<li><a href="index.html">Главная</a></li>
-				<li><a href="#">Каталог товаров</a></li>
-				<li><a>Моноподы для селфи</a></li>
-			</ul>
+		<main>
+			<div class="container">
+				<h1 class="gilroy-font">Моноподы для селфи</h1>
+				<ul class="breadcrumbs list-style">
+					<li><a href="index.html">Главная</a></li>
+					<li><a href="#">Каталог товаров</a></li>
+					<li><a>Моноподы для селфи</a></li>
+				</ul>
+			</div>
 			<div class="inner-page-wrapper">
 				<section class="filters">
 					<h2 class="gilroy-font">Фильтр:</h2>
-					<form class="filter-form" action="https://echo.htmlacademy.ru" method="post">
-						<div class="filter-fieldset gilroy-font">
-							<p class="filter-legend">Стоимость</p>
-							<div class="range-filter">
-								<div class="range-controls">
-									<div class="range-scale">
-										<div class="range-curent"></div>
+					<div class="filters-wrapper">
+						<form class="filter-form" action="https://echo.htmlacademy.ru" method="post">
+							<div class="filter-fieldset gilroy-font">
+								<p class="filter-legend">Стоимость</p>
+								<div class="range-filter">
+									<div class="range-controls">
+										<div class="range-scale">
+											<div class="range-curent"></div>
+										</div>
+										<div class="range-toggle range-toggle-min"></div>
+										<div class="range-toggle range-toggle-max"></div>
 									</div>
-									<div class="range-toggle range-toggle-min"></div>
-									<div class="range-toggle range-toggle-max"></div>
-								</div>
-								<div class="price-controls">
-									<div class="price-min">
-										<label for="range-min">от</label>
-										<input class="input-min-price" type="text" name="min-price" value="0" id="range-min">
-									</div>
-									<div class="price-max">
-										<label for="range-max">до</label>
-										<input class="input-max-price" type="text" name="max-price" value="5000" id="range-max">
+									<div class="price-controls">
+										<div class="price-min">
+											<label for="range-min">от</label>
+											<input class="input-min-price" type="text" name="min-price" value="0" id="range-min">
+										</div>
+										<div class="price-max">
+											<label for="range-max">до</label>
+											<input class="input-max-price" type="text" name="max-price" value="5000" id="range-max">
+										</div>
 									</div>
 								</div>
 							</div>
-						</div>
-						<div class="filter-fieldset">
-							<p class="filter-legend gilroy-font">Цвет</p>
-							<ul class="color-filters list-style">
-								<li>
-									<label>
-										<input class="visually-hidden" type="checkbox" name="black" checked>
-										<span>Черный</span>
-									</label>
-								</li>
-								<li>
-									<label>
-										<input class="visually-hidden" type="checkbox" name="white">
-										<span>Белый</span>
-									</label>
-								</li>
-								<li>
-									<label>	
-										<input class="visually-hidden" type="checkbox" name="blue" checked>
-										<span>Синий</span>
-									</label>
-								</li>
-								<li>
-									<label>
-										<input class="visually-hidden" type="checkbox" name="red" checked>
-										<span>Красный</span>
-									</label>
-								</li>
-								<li>
-									<label>
-										<input class="visually-hidden" type="checkbox" name="pink">
-										<span>Розовый</span>
-									</label>
-								</li>
-							</ul>
-						</div>
-						<div class="filter-fieldset">
-							<p class="filter-legend gilroy-font">Bluetooth</p>
-							<ul class="bluetooth-filters list-style">
-								<li>
-									<input class="visually-hidden" type="radio" name="bluetooth" value="yes" id="bluetooth-yes" checked>
-									<label for="bluetooth-yes">Есть</label>
-								</li>
-								<li>
-									<input class="visually-hidden" type="radio" name="bluetooth" value="no" id="bluetooth-no">
-									<label for="bluetooth-no">Нет</label>
-								</li>
-							</ul>
-						</div>
-						<button class="button" type="submit">Показать</button>
-					</form>
+							<div class="filter-fieldset">
+								<p class="filter-legend gilroy-font">Цвет</p>
+								<ul class="color-filters list-style">
+									<li>
+										<label>
+											<input class="visually-hidden" type="checkbox" name="black" checked>
+											<span>Черный</span>
+										</label>
+									</li>
+									<li>
+										<label>
+											<input class="visually-hidden" type="checkbox" name="white">
+											<span>Белый</span>
+										</label>
+									</li>
+									<li>
+										<label>	
+											<input class="visually-hidden" type="checkbox" name="blue" checked>
+											<span>Синий</span>
+										</label>
+									</li>
+									<li>
+										<label>
+											<input class="visually-hidden" type="checkbox" name="red" checked>
+											<span>Красный</span>
+										</label>
+									</li>
+									<li>
+										<label>
+											<input class="visually-hidden" type="checkbox" name="pink">
+											<span>Розовый</span>
+										</label>
+									</li>
+								</ul>
+							</div>
+							<div class="filter-fieldset">
+								<p class="filter-legend gilroy-font">Bluetooth</p>
+								<ul class="bluetooth-filters list-style">
+									<li>
+										<input class="visually-hidden" type="radio" name="bluetooth" value="yes" id="bluetooth-yes" checked>
+										<label for="bluetooth-yes">Есть</label>
+									</li>
+									<li>
+										<input class="visually-hidden" type="radio" name="bluetooth" value="no" id="bluetooth-no">
+										<label for="bluetooth-no">Нет</label>
+									</li>
+								</ul>
+							</div>
+							<button class="button" type="submit">Показать</button>
+						</form>
+					</div>
 				</section>
 
 				<section class="catalog">
 					<h2 class="visually-hidden">Каталог товаров</h2>
 					<div class="sorting">
-						<h3 class="gilroy-font">Сортировка:</h3>
-						<ul class="sorting-type-list list-style">
-							<li><a class="sorting-button sorting-button-curent">По цене</a></li>
-							<li><a class="sorting-button" href="#">По типу</a></li>
-							<li><a class="sorting-button" href="#">По популярности</a></li>
-						</ul>
-						<ul class="sorting-direction-list list-style">
-							<li><a class="sorting-dir-button sorting-dir-up" href="#">По возрастанию</a></li>
-							<li><a class="sorting-dir-button sorting-dir-down sorting-dir-curent">По убыванию</a></li>
-						</ul>
+						<div class="catalog-wrapper sorting-wrapper">
+							<h3 class="gilroy-font">Сортировка:</h3>
+							<ul class="sorting-type-list list-style">
+								<li><a class="sorting-button sorting-button-curent">По цене</a></li>
+								<li><a class="sorting-button" href="#">По типу</a></li>
+								<li><a class="sorting-button" href="#">По популярности</a></li>
+							</ul>
+							<ul class="sorting-direction-list list-style">
+								<li><a class="sorting-dir-button sorting-dir-up" href="#">По возрастанию</a></li>
+								<li><a class="sorting-dir-button sorting-dir-down sorting-dir-curent">По убыванию</a></li>
+							</ul>
+						</div>
 					</div>
-					<div class="item-list">
-						<article class="item-card">
-							<img src="img/item-1.jpg" width="360" height="380" alt="Любительская селфи-палка">
-							<div class="item-data">
-								<h3><a class="device-name gilroy-font" href="#">Любительская селфи-палка</a></h3>
-								<p class="price gilroy-font">500 руб.</p>
-							</div>
-							<div class="catalog-item-buttons not-show">
-								<button class="button" type="button">В корзину</button>
-								<button class="compare-button" type="button">Добавить к сравнению</button>
-							</div>
-						</article>
-						<article class="item-card">
-							<img src="img/item-2.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
-							<div class="item-data">
-								<h3><a class="device-name gilroy-font" href="#">Профессиональная селфи-палка</a></h3>
-								<p class="price gilroy-font">1 500 руб.</p>
-							</div>
-							<div class="catalog-item-buttons not-show">
-								<button class="button" type="button">В корзину</button>
-								<button class="compare-button" type="button">Добавить к сравнению</button>
-							</div>
-						</article>
-						<article class="item-card">
-							<img src="img/item-3.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
-							<div class="item-data">
-								<h3><a class="device-name gilroy-font" href="#">Непотопляемая селфи-палка</a></h3>
-								<p class="price gilroy-font">2 500 руб.</p>
-							</div>
-							<div class="catalog-item-buttons not-show">
-								<button class="button" type="button">В корзину</button>
-								<button class="compare-button" type="button">Добавить к сравнению</button>
-							</div>
-						</article>
-						<article class="item-card new">
-							<img src="img/item-4.jpg" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
-							<div class="item-data">
-								<h3><a class="device-name gilroy-font" href="#">Селфи-палка «Следуй за мной»</a></h3>
-								<p class="price gilroy-font">4 900 руб.</p>
-							</div>
-							<div class="catalog-item-buttons not-show">
-								<button class="button" type="button">В корзину</button>
-								<button class="compare-button" type="button">Добавить к сравнению</button>
-							</div>
-						</article>
-					</div>
-					<div class="catalog-pagination">
-						<a class="page-change page-prev" href="#">Назад</a>
-						<ul class="page-list list-style">
-							<li class="page-curent"><a>1</a></li>
-							<li class="page"><a href="#">2</a></li>
-							<li class="page"><a href="#">3</a></li>
-						</ul>
-						<a class="page-change page-next" href="#">Вперед</a>
+					<div class="catalog-wrapper">
+						<div class="item-list">
+							<article class="item-card">
+								<img src="img/item-1.jpg" width="360" height="380" alt="Любительская селфи-палка">
+								<div class="item-data">
+									<h3><a class="device-name gilroy-font" href="#">Любительская селфи-палка</a></h3>
+									<p class="price gilroy-font">500 руб.</p>
+								</div>
+								<div class="catalog-item-buttons not-show">
+									<button class="button" type="button">В корзину</button>
+									<button class="compare-button" type="button">Добавить к сравнению</button>
+								</div>
+							</article>
+							<article class="item-card">
+								<img src="img/item-2.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
+								<div class="item-data">
+									<h3><a class="device-name gilroy-font" href="#">Профессиональная селфи-палка</a></h3>
+									<p class="price gilroy-font">1 500 руб.</p>
+								</div>
+								<div class="catalog-item-buttons not-show">
+									<button class="button" type="button">В корзину</button>
+									<button class="compare-button" type="button">Добавить к сравнению</button>
+								</div>
+							</article>
+							<article class="item-card">
+								<img src="img/item-3.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
+								<div class="item-data">
+									<h3><a class="device-name gilroy-font" href="#">Непотопляемая селфи-палка</a></h3>
+									<p class="price gilroy-font">2 500 руб.</p>
+								</div>
+								<div class="catalog-item-buttons not-show">
+									<button class="button" type="button">В корзину</button>
+									<button class="compare-button" type="button">Добавить к сравнению</button>
+								</div>
+							</article>
+							<article class="item-card new">
+								<img src="img/item-4.jpg" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
+								<div class="item-data">
+									<h3><a class="device-name gilroy-font" href="#">Селфи-палка «Следуй за мной»</a></h3>
+									<p class="price gilroy-font">4 900 руб.</p>
+								</div>
+								<div class="catalog-item-buttons not-show">
+									<button class="button" type="button">В корзину</button>
+									<button class="compare-button" type="button">Добавить к сравнению</button>
+								</div>
+							</article>
+						</div>
+						<div class="catalog-pagination">
+							<a class="page-change page-prev" href="#">Назад</a>
+							<ul class="page-list list-style">
+								<li class="page-curent"><a>1</a></li>
+								<li class="page"><a href="#">2</a></li>
+								<li class="page"><a href="#">3</a></li>
+							</ul>
+							<a class="page-change page-next" href="#">Вперед</a>
+						</div>
 					</div>
 				</section>
 			</div>
