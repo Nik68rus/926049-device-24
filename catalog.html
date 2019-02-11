@@ -7,44 +7,69 @@
 		<link href="css/style.css" rel="stylesheet">
 	</head>
 	<body class="inner-page">
-		<header class="container">
-			<div class="main-header">
-				<a class="header-logo gilroy-font" href="index.html">Device</a>
-				<nav class="main-navigation">
-					<div class="user-nav-wrapper">
-						<form class="search-form" action="https://echo.htmlacademy.ru" method="post">
-							<input class="form-field" type="search" name="search" placeholder="Поиск по сайту">
-							<button class="not-show" type="submit">Найти</button>
-						</form>
-						<ul class="user-navigation list-style">
-							<li><a href="#">Валентин Петухов</a></li>
-							<li><a class="sign-out-link" href="#">Выйти</a></li>
-							<li><a href="#">Сравнить</a></li>
-							<li><a href="#">Корзина</a></li>
-						</ul>
-					</div>
-					<ul class="site-navigation list-style gilroy-font">
-						<li class="menu-linlk">
-							<a href="#">Каталог товаров</a>
-							<div class="categories-menu not-show">
-								<ul class="categories-menu-list list-style">
-									<li><a href="#">Виртуальная реальность</a></li>
-									<li><a href="#">Фитнес-браслеты</a></li>
-									<li><a href="#">Квадрокоптеры</a></li>
-									<li><a href="catalog.html">Моноподы для селфи</a></li>
-									<li><a href="#">Умные часы</a></li>
-									<li><a href="#">Экшн-камеры</a></li>
-								</ul>
+			<header class="container">
+				<div class="main-header">
+					<a class="header-logo gilroy-font" href="index.html">Device</a>
+					<nav class="main-navigation">
+						<div class="header-line">
+							<form class="search-form" action="https://echo.htmlacademy.ru" method="post">
+								<input class="form-field" type="search" name="search" placeholder="Поиск по сайту">
+								<button class="not-show" type="submit">Найти</button>
+							</form>
+							<ul class="user-navigation list-style">
+								<li>
+									<ul class="user-options list-style">
+										<li><a class="sign-in" href="#">Валентин Петухов</a></li>
+										<li><a class="sign-out-link" href="#">Выйти</a></li>
+									</ul>
+								</li>
+								<li>
+									<ul class="buyer-options list-style">
+										<li><a class="compare" href="#">Сравнить</a></li>
+										<li><a class="cart" href="#">Корзина</a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+						<div class="header-line">
+							<div class="site-navigation gilroy-font menu-link">
+								<a class="catalog-link" href="#">Каталог товаров</a>
+								<div class="categories-menu not-show">
+									<ul class="categories-menu-list list-style">
+										<li class="menu-column wide-column">
+											<ul class="list-style">
+												<li><a href="#">Виртуальная реальность</a></li>
+												<li><a href="catalog.html">Моноподы для селфи</a></li>
+												<li><a href="#">Экшн-камеры</a></li>
+											</ul>
+										</li>
+										<li class="menu-column">
+											<ul class="list-style">
+												<li><a href="#">Фитнес-браслеты</a></li>
+												<li><a href="#">Умные часы</a></li>
+											</ul>
+										<li class="menu-column">
+											<ul class="list-style">
+												<li><a href="#">Квадрокоптеры</a></li>
+											</ul>
+										</li>
+									</ul>
+								</div>
 							</div>
-						</li>
-						<li><a href="#">Доставка</a></li>
-						<li><a href="#">Гарантия</a></li>
-						<li><a href="#">Контакты</a></li>
-					</ul>
-				</nav>
-			</div>
-		</header>
-
+							<ul class="site-navigation list-style gilroy-font">
+								<li>
+									<ul class="header-services list-style">
+										<li><a href="#">Доставка</a></li>
+										<li><a href="#">Гарантия</a></li>
+									</ul>
+								</li>
+								<li><a class="header-contacts" href="#">Контакты</a></li>
+							</ul>
+						</div>
+					</nav>
+				</div>
+			</header>
+		
 		<main>
 			<div class="container">
 				<h1 class="gilroy-font">Моноподы для селфи</h1>
