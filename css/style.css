@@ -99,8 +99,8 @@ input[type="radio"].visually-hidden {
 }
 
 .inner-page .main-header {
-	padding-bottom: 28px;
-	margin-bottom: 36px;
+	padding-bottom: 39px;
+	margin-bottom: 37px;
 }
 
 .main-header h1 {
@@ -1526,23 +1526,24 @@ input[type="radio"].visually-hidden {
 
 .inner-page .header-logo {
 	display: inline-block;
-	margin-bottom: 18px;
+	margin-bottom: 6px;
 }
 
 .inner-page h1 {
 	padding-left: 60px;
-	margin-bottom: 25px;
+	margin-bottom: 20px;
+	letter-spacing: 0.47px;
 }
 
 .breadcrumbs {
 	display: flex;
-	margin-bottom: 50px;
+	margin-bottom: 45px;
 	padding-left: 60px;
 }
 
 .breadcrumbs li {
-	padding-right: 20px;
-	margin-right: 20px;
+	padding-right: 22px;
+	margin-right: 16px;
 	position: relative;
 }
 
