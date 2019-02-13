@@ -391,6 +391,33 @@ input[type="radio"].visually-hidden {
 	bottom: 260px;
 }
 
+.promo-slider-controls label {
+	font-size: 0;
+	position: relative;
+	padding-left: 12px;
+	margin-right: 20px;
+}
+
+.promo-slider-controls label::before {
+	content: "";
+	position: absolute;
+	width: 12px;
+	height: 12px;
+	border-radius: 50%;
+	border: 1px solid black;
+}
+/*
+.promo-slider input:checked ~ label::after {
+	content: "";
+	position: absolute;
+	width: 4px;
+	height: 4px;
+	left: 5px;
+	top: 5px;
+	border-radius: 50%;
+	border: 1px solid black;
+}
+*/
 .promo-slider-list {
 	position: relative;
 	counter-reset: slider 0;
@@ -622,10 +649,11 @@ input[type="radio"].visually-hidden {
 	text-transform: uppercase;
 	background-color: #dcdcdc;
 	width: 200px;
-	min-height: 70px;
 	vertical-align: middle;
 	padding-left: 60px;
 	padding-right: 68px;
+	padding-top: 23px;
+	padding-bottom: 23px;
 }
 
 .inner-page-headline {
@@ -785,6 +813,7 @@ input[type="radio"].visually-hidden {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
+	min-height: 70px;
 }
 
 .page-list {
@@ -812,6 +841,10 @@ input[type="radio"].visually-hidden {
 
 .page a {
 	color: rgba(0, 0, 0, 0.3);
+}
+
+.page-change {
+	padding: 20px 23px;
 }
 
 .page-change:hover,
@@ -956,7 +989,10 @@ input[type="radio"].visually-hidden {
 }
 
 .item-card:hover .catalog-item-buttons {
-	display: block;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 	position: absolute;
 	left: 0;
 	top: 0;
@@ -1316,11 +1352,23 @@ input[type="radio"].visually-hidden {
 }
 
 .breadcrumbs li {
-	padding-right: 40px;
+	padding-right: 20px;
+	margin-right: 20px;
+	position: relative;
+}
+
+.breadcrumbs li:not(:last-child)::after {
+	content: ">";
+	color: #000000;
+	font-weight: 800;
+	position: absolute;
+	right: 0;
+	top: 0;
 }
 
 .breadcrumbs li:last-of-type {
 	padding-right: 0;
+	margin-right: 0;
 }
 
 .filters {
