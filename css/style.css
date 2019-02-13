@@ -531,19 +531,23 @@ input[type="radio"].visually-hidden {
 	height: 10px;
 	border-radius: 50%;
 	border: 1px solid black;
+	cursor: pointer;
+	z-index: 5;
 }
-/*
-.promo-slider input:checked ~ label::after {
+
+.promo-slide-radio:checked + label::after {
 	content: "";
 	position: absolute;
 	width: 4px;
 	height: 4px;
-	left: 5px;
-	top: 5px;
+	left: 13px;
+	top: -18px;
 	border-radius: 50%;
 	border: 1px solid black;
+	z-index: 5;
+	cursor: pointer;
 }
-*/
+
 .promo-slider-list {
 	position: relative;
 	counter-reset: slider 0;
