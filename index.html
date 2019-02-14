@@ -261,23 +261,25 @@
 			</div>
 		</footer>
 
-		<section class="contact-us">
+		<section class="contact-us not-show">
 			<h2 class="visually-hidden">Форма обратной связи</h2>
 			<form action="https://echo.htmlacademy.ru" method="post">
-				<label>
-					Ваше имя:
-					<input class="form-field" type="text" name="name" placeholder="Имя Фамилия">
-				</label>
-				<label>
-					Ваш e-mail:
-					<input class="form-field" type="email" name="email" placeholder="email@example.com">
-				</label>
-				<label>
-					Текст письма:
-					<textarea class="form-field" name="message" placeholder="В свободной форме"></textarea>
-				</label>
-				<button class="button" type="submit">Отправить</button>
-				<button class="modal-close" type="button">Закрыть</button>
+				<div class="modal-form modal-contact">
+					<label>
+						<span>Ваше имя:</span>
+						<input class="modal-input modal-name form-field" type="text" name="name" placeholder="Имя Фамилия">
+					</label>
+					<label>
+						<span>Ваш e-mail:</span>
+						<input class="modal-input form-field" type="email" name="email" placeholder="email@example.com">
+					</label>
+					<label>
+						<span>Текст письма:</span>
+						<textarea class="modal-input modal-message form-field" name="message" placeholder="В свободной форме"></textarea>
+					</label>
+					<button class="button" type="submit">Отправить</button>
+					<button class="modal-close" type="button">Закрыть</button>
+				</div>
 			</form>
 		</section>
 		<section class="map not-show">
