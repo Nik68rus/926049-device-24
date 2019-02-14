@@ -788,6 +788,10 @@ input[type="radio"].visually-hidden {
 	margin-right: 35px;
 }
 
+.footer-user-navigation .user {
+	margin-right: 20px;
+}
+
 .footer-user-navigation li:last-of-type {
 	margin-right: 0;
 }
@@ -845,12 +849,26 @@ input[type="radio"].visually-hidden {
 	min-width: 1200px;
 }
 
+.filter-fieldset {
+	border-top: 2px solid black;
+	padding-top: 10px;
+	margin-bottom: 30px;
+}
+
+.range-filter {
+	height: 56px;
+}
+
 .filter-legend {
 	font-size: 18px;
 	line-height: 24px;
+	padding: 0;
+	margin: 0;
+	margin-bottom: 18px;
 }
 
 .price-controls {
+	display: flex;
 	font-size: 14px;
 	line-height: 24px;
 	font-weight: 300;
@@ -861,6 +879,7 @@ input[type="radio"].visually-hidden {
 	border: none;
 	background-color: transparent;
 	color: rgba(0, 0, 0, 0.2);
+	width: 50px;
 }
 
 .color-filters, 
@@ -868,6 +887,53 @@ input[type="radio"].visually-hidden {
 	font-size: 14px;
 	line-height: 40px;
 	color: #000000;
+}
+
+.color-filters span {
+	padding-left: 39px;
+	position: relative;
+}
+
+.color-filters span::before {
+	content: "";
+	position: absolute;
+	width: 23px;
+	height: 23px;
+	left: -2px;
+	top: -2px;
+	background-image: url("../img/checkbox-off.svg");
+}
+
+.color:checked + span::before {
+	width: 27px;
+	background-image: url("../img/checkbox-on.svg");
+}
+
+.bt-radio + label {
+	padding-left: 38px;
+	position: relative;
+}
+
+.bt-radio + label::before {
+	content: "";
+	position: absolute;
+	width: 17px;
+	height: 17px;
+	left: -2px;
+	top: -2px;
+	border-radius: 50%;
+	border: 4px solid black;
+}
+
+.bt-radio:checked + label::after {
+	content: "";
+	position: absolute;
+	width: 9px;
+	height: 9px;
+	border-radius: 50%;
+	background-color: #000000;
+	left: 6px;
+	top: 6px; 
 }
 
 .filters button {
@@ -878,6 +944,7 @@ input[type="radio"].visually-hidden {
 
 .sorting {
 	display: flex;
+	justify-content: space-between;
 	background-color: #ebebeb;
 	width: 760px;
 	padding-left: 72px;
@@ -914,6 +981,14 @@ input[type="radio"].visually-hidden {
 	background-color: #ebebeb;
 }
 
+.sorting-direction-list li {
+	margin-right: 19px;
+}
+
+.sorting-direction-list li:last-of-type {
+	margin-right: 0;
+}
+
 .sorting-button {
 	font-size: 14px;
 	line-height: 18px;
@@ -947,6 +1022,7 @@ input[type="radio"].visually-hidden {
 	width: 11px;
 	height: 10px;
 	left: 0;
+	top: -8px;
 	opacity: 0.2;
 }
 
@@ -972,6 +1048,7 @@ input[type="radio"].visually-hidden {
 }
 
 
+
 .device-name {
 	font-size: 18px;
 	line-height: 24px;
@@ -991,6 +1068,7 @@ input[type="radio"].visually-hidden {
 	flex-wrap: wrap;
 	justify-content: space-between;
 	min-height: 70px;
+	margin-top: -11px;
 }
 
 .page-list {
@@ -999,10 +1077,15 @@ input[type="radio"].visually-hidden {
 	flex-wrap: wrap;
 	justify-content: center;
 	align-items: center;
+	padding-top: 2px;
 }
 
 .page-list li {
-	padding: 0 17px;
+	padding: 0 16px;
+}
+
+.page-list li:last-of-type {
+	margin-right: 0;
 }
 
 .catalog-pagination a {
@@ -1021,7 +1104,7 @@ input[type="radio"].visually-hidden {
 }
 
 .page-change {
-	padding: 20px 23px;
+	padding: 23px 30px;
 }
 
 .page-change:hover,
@@ -1168,6 +1251,22 @@ input[type="radio"].visually-hidden {
 
 .item-card {
 	position: relative;
+	margin-bottom: 45px;
+	margin-right: 40px;
+}
+
+.item-card:nth-child(2n) {
+	margin-right: 0;
+}
+
+.item-card img {
+	margin-bottom: 22px;
+}
+
+.item-card h3 {
+	letter-spacing: 0.18px;
+	line-height: 24px;
+	width: 75%;
 }
 
 .item-card:hover .catalog-item-buttons {
@@ -1206,8 +1305,8 @@ input[type="radio"].visually-hidden {
 	position: absolute;
 	width: 60px;
 	height: 60px;
-	top: 0;
-	right: 0;
+	top: 30px;
+	right: 27px;
 	font-family: "Gilroy", "Arial", sans-serif;
 	text-transform: uppercase;
 	font-size: 14px;
@@ -1569,11 +1668,6 @@ input[type="radio"].visually-hidden {
 	padding-right: 68px;
 }
 
-.filters p {
-	margin: 0;
-	padding: 0;
-}
-
 .catalog {
 	width: 760px;
 	padding-top: 69px;
@@ -1613,10 +1707,7 @@ input[type="radio"].visually-hidden {
 	display: flex;
 	justify-content: space-between;
 	align-items: baseline;
-}
-
-.item-card {
-	margin-bottom: 45px;
+	width: 360px;
 }
 
 .item-data p {
