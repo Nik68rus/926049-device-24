@@ -132,7 +132,6 @@ input[type="radio"].visually-hidden {
 	position: relative;
 	width: 50%;
 	box-sizing: border-box; 
-
 }
 
 .search-form::before {
@@ -140,8 +139,8 @@ input[type="radio"].visually-hidden {
 	position: absolute;
 	width: 16px;
 	height: 16px;
-	left: 3px;
-	top: 18px;
+	left: 2px;
+	top: 20px;
 	background-image: url("../img/search.svg");
 }
 
@@ -194,8 +193,8 @@ input[type="radio"].visually-hidden {
 .user-navigation a {
 	color: #000000;
 	text-decoration: none;
-	padding-top: 15px;
-	padding-bottom: 15px;  
+	padding-top: 11px;
+	padding-bottom: 9px;  
 }
 
 .user-navigation a:hover,
@@ -208,7 +207,7 @@ input[type="radio"].visually-hidden {
 }
 
 .sign-in {
-	padding-left: 25px;
+	padding-left: 26px;
 	position: relative;
 }
 
@@ -218,7 +217,7 @@ input[type="radio"].visually-hidden {
 	width: 13px;
 	height: 12px;
 	left: 0;
-	top: 19px;
+	top: 20px;
 }
 
 .main-header .sign-in::before {
@@ -230,7 +229,7 @@ input[type="radio"].visually-hidden {
 }
 
 .compare {
-	padding-left: 28px;
+	padding-left: 27px;
 	position: relative;
 }
 
@@ -239,7 +238,7 @@ input[type="radio"].visually-hidden {
 	position: absolute;
 	width: 10px;
 	height: 10px;
-	left: 8px;
+	left: 6px;
 	top: 22px;
 }
 
@@ -252,7 +251,8 @@ input[type="radio"].visually-hidden {
 }
 
 .cart {
-	padding-left: 28px;
+	padding-left: 27px;
+	padding-right: 1px;
 	position: relative;
 }
 
@@ -261,8 +261,8 @@ input[type="radio"].visually-hidden {
 	position: absolute;
 	width: 12px;
 	height: 12px;
-	left: 5px;
-	top: 19px;
+	left: 4px;
+	top: 20px;
 }
 
 .main-header .cart::before {
@@ -509,15 +509,16 @@ input[type="radio"].visually-hidden {
 
 .promo-slider-controls {
 	position: absolute;
-	right: 93px;
-	bottom: 229px;
+	right: 83px;
+	bottom: 239px;
 }
 
 .promo-slider-controls label {
 	font-size: 0;
 	position: relative;
-	padding-left: 10px;
-	margin-right: 20px;
+	padding-left: 12px;
+	padding-top: 10px;
+	margin-right: 18px;
 }
 
 .promo-slider-controls label:last-child {
@@ -529,6 +530,8 @@ input[type="radio"].visually-hidden {
 	position: absolute;
 	width: 10px;
 	height: 10px;
+	top: 0;
+	left: 0;
 	border-radius: 50%;
 	border: 1px solid black;
 	cursor: pointer;
@@ -540,8 +543,8 @@ input[type="radio"].visually-hidden {
 	position: absolute;
 	width: 4px;
 	height: 4px;
-	left: 13px;
-	top: -18px;
+	left: 3px;
+	top: 3px;
 	border-radius: 50%;
 	border: 1px solid black;
 	z-index: 5;
@@ -605,11 +608,11 @@ input[type="radio"].visually-hidden {
 	margin: 0;
 	padding: 0;
 	letter-spacing: 0.15px;
-	margin-bottom: 42px;
+	margin-bottom: 41px;
 }
 
 .slide-data .button {
-	margin-bottom: 45px;
+	margin-bottom: 47px;
 }
 
 .slide-table {
@@ -617,8 +620,8 @@ input[type="radio"].visually-hidden {
 }
 
 .slide-table td {
-	padding-right: 78px;
-	padding-bottom: 8px;
+	padding-right: 77px;
+	padding-bottom: 6px;
 }
 
 .slide-table td:last-child {
@@ -1328,6 +1331,7 @@ input[type="radio"].visually-hidden {
 .logo:hover {
 	filter: grayscale(0%);
 	opacity: 1;
+	transition-duration: 0.5s;
 }
 
 .main-navigation {
@@ -1348,11 +1352,9 @@ input[type="radio"].visually-hidden {
 	width: 50%;
 	box-sizing: border-box;
 	border-top: 1px solid transparent;
-
-
 	justify-content: space-between;
 	flex-wrap: wrap;
-	padding-left: 20px;
+	padding-left: 18px;
 	padding-right: 3px;
 }
 
@@ -1362,11 +1364,11 @@ input[type="radio"].visually-hidden {
 	width: 260px;
 }
 
-.user-options li {
+.user-options a {
 	margin-right: 20px;
 }
 
-.user-options li:last-of-type {
+.user-options a:last-of-type {
 	margin-right: 0;
 }
 
@@ -1487,6 +1489,8 @@ input[type="radio"].visually-hidden {
 .categories-item:hover::before,
 .categories-item:focus::before {
 	background-color: #f0c52e;
+  transition-duration: 0.5s;
+
 }
 
 .manufactures {
@@ -1554,7 +1558,7 @@ input[type="radio"].visually-hidden {
 .index-columns {
 	display: flex;
 	justify-content: space-between;
-	padding-bottom: 80px;
+	padding-bottom: 78px;
 }
 
 .footer-wrapper {
@@ -1575,7 +1579,7 @@ input[type="radio"].visually-hidden {
 }
 
 .sitenav-line {
-	margin-bottom: 62px;
+	margin-bottom: 65px;
 	align-items: flex-end;
 }
 
