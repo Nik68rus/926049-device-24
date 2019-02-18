@@ -707,8 +707,6 @@ input[type="radio"].visually-hidden {
 .service-slide::after {
 	content: "";
 	position: absolute;
-	right: 0;
-	top: 0;
 	background-position: center center;
 	background-repeat: no-repeat;
 }
@@ -722,10 +720,18 @@ input[type="radio"].visually-hidden {
 }
 
 .warranty-slide::after {
+	width: 171px;
+	height: 194px;
+	top: 11px;
+	right: 6px;
 	background-image: url(../img/warranty.png);
 }
 
 .credit-slide::after {
+	width: 156px;
+	height: 186px;
+	top: 11px;
+	right: 6px;
 	background-image: url(../img/credit.png);
 }
 
@@ -1829,5 +1835,24 @@ input[type="radio"].visually-hidden {
 
 .map {
 	width: 960px;
-	position: relative;
+	height: 559px;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	box-shadow: 0px 10px 20px 0 rgba(4, 6, 6, 0.2);
+	margin-top: -280px;
+	margin-left: -480px;
+	z-index: 10;
+	background-image: url(../img/map-big.jpg);
+}
+
+.contact-us {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	background-color: #ffffff;
+	box-shadow: 0px 10px 20px 0 rgba(4, 6, 6, 0.2);
+	margin-top: -277px;
+	margin-left: -480px;
+	z-index: 10;
 }
