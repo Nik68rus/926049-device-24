@@ -1005,10 +1005,13 @@ input[type="radio"].visually-hidden {
 
 .sorting {
 	display: flex;
+	box-sizing: border-box;
 	justify-content: space-between;
 	background-color: #ebebeb;
-	width: 760px;
+	width: 832px;
 	padding-left: 72px;
+	padding-top: 20px;
+	padding-bottom: 15px; 
 	min-height: 70px;
 	align-items: center;
 }
