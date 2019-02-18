@@ -861,11 +861,11 @@ input[type="radio"].visually-hidden {
 .filter-fieldset {
 	border-top: 2px solid black;
 	padding-top: 10px;
-	margin-bottom: 30px;
+	margin-bottom: 31px;
 }
 
-.range-filter {
-	height: 56px;
+.filter-price .filter-legend {
+	margin-bottom: 22px;
 }
 
 .range-controls {
@@ -910,11 +910,11 @@ input[type="radio"].visually-hidden {
 }
 
 .range-toggle-min {
-	left: 0;
+	left: -5px;
 }
 
 .range-toggle-max {
-	right: 75px;
+	right: 73px;
 }
 
 .filter-legend {
@@ -1783,7 +1783,7 @@ input[type="radio"].visually-hidden {
 .filters {
 	background-color: #efefef;
 	width: 200px;
-	padding-top: 69px;
+	padding-top: 68px;
 	padding-left: 60px;
 	padding-right: 68px;
 }
