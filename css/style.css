@@ -968,8 +968,11 @@ input[type="radio"].visually-hidden {
 	opacity: 0.6;
 }
 
-.color:not(:checked):not(:disabled) + span:active::before,
 .color:checked + span::before {
+	background-image: url("../img/checkbox-on.svg");
+}
+
+.color:not(:checked):not(:disabled) + span:active::before {
 	background-image: url("../img/checkbox-on.svg");
 	opacity: 1;
 }
