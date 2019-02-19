@@ -505,6 +505,7 @@ input[type="radio"].visually-hidden {
 	padding-right: 60px;
 	padding-bottom: 96px;
 	position: relative;
+	min-height: 495px;
 }
 
 .promo-slider-controls {
@@ -1968,4 +1969,21 @@ input[type="radio"].visually-hidden {
 	margin-top: -277px;
 	margin-left: -480px;
 	z-index: 10;
+}
+
+.promo-slide {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	z-index: 1;
+	transition: opacity 1s;
+
+}
+
+.showing {
+	opacity: 1;
+	z-index: 2;
 }
