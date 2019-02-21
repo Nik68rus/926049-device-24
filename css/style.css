@@ -995,7 +995,7 @@ input[type="radio"].visually-hidden {
 }
 
 .color-filters span:hover::before,
-.color-filters span:focus::before {
+.color:focus + span::before {
 	opacity: 0.6;
 }
 
@@ -1029,9 +1029,9 @@ input[type="radio"].visually-hidden {
 }
 
 .bt-radio + label:hover::before,
-.bt-radio + label:focus::before,
+.bt-radio:focus + label::before,
 .bt-radio + label:hover::after,
-.bt-radio + label:focus::after {
+.bt-radio:focus + label::after {
 	opacity: 0.6;
 }
 
