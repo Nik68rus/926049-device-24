@@ -1990,6 +1990,10 @@ input[type="radio"].visually-hidden {
 	background-image: url(../img/map-big.jpg);
 }
 
+.map iframe {
+	border: none;
+}
+
 .contact-us {
 	position: fixed;
 	top: 50%;
