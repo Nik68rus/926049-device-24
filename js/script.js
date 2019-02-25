@@ -1,25 +1,10 @@
-var slides = document.querySelectorAll('.promo-slider-list .promo-slide');
-var currentSlide = 0;
-var slideInterval = setInterval(nextSlide,4000);
+var slide1 = document.querySelector(".promo-slide1");
+var slide2 = document.querySelector(".promo-slide2");
+var slide3 = document.querySelector(".promo-slide3");
+var slide1Toggle = document.querySelector(".promoslide1-toggle");
+var slide2Toggle = document.querySelector(".promoslide2-toggle");
+var slide3Toggle = document.querySelector(".promoslide3-toggle");
 
-/*
-var servSlides = document.querySelectorAll('.service-slider-list .service-slide');
-var currentServSlide = 0;
-var servSlideInterval = setInterval(nextServSlide,2000);
-*/
-
-function nextSlide() {
-  slides[currentSlide].className = 'promo-slide';
-  currentSlide = (currentSlide+1)%slides.length;
-  slides[currentSlide].className = 'promo-slide showing';
-}
-/*
-function nextServSlide() {
-  servSlides[currentServSlide].className = 'service-slide';
-  currentServSlide = (currentServSlide+1)%servSlides.length;
-  servSlides[currentServSlide].className = 'service-slide showing';
-}
-*/
 
 var link = document.querySelector(".feedback-button");
 var popup = document.querySelector(".contact-us");
@@ -36,6 +21,36 @@ var mapClose = document.querySelector(".map-close");
 var isStorageSupport = true;
 var storageName = "";
 var storageMail = "";
+
+slide1Toggle.addEventListener("click", function (evt) {
+	evt.preventDefault();
+  slide1Toggle.classList.add("selected");
+  slide2Toggle.classList.remove("selected");
+  slide3Toggle.classList.remove("selected");
+	slide1.classList.add("showing");
+	slide2.classList.remove("showing");
+	slide3.classList.remove("showing");
+});
+
+slide2Toggle.addEventListener("click", function (evt) {
+	evt.preventDefault();
+  slide1Toggle.classList.remove("selected");
+  slide2Toggle.classList.add("selected");
+  slide3Toggle.classList.remove("selected");
+	slide1.classList.remove("showing");
+	slide2.classList.add("showing");
+	slide3.classList.remove("showing");
+});
+
+slide3Toggle.addEventListener("click", function (evt) {
+	evt.preventDefault();
+  slide1Toggle.classList.remove("selected");
+  slide2Toggle.classList.remove("selected");
+  slide3Toggle.classList.add("selected");
+	slide1.classList.remove("showing");
+	slide2.classList.remove("showing");
+	slide3.classList.add("showing");
+});
 
 try {
 	storageName = localStorage.getItem("userName");
@@ -110,5 +125,3 @@ mapClose.addEventListener("click", function (evt) {
 	evt.preventDefault();
 	map.classList.remove("modal-show");
 }); 
-
-

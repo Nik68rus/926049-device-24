@@ -548,50 +548,6 @@ input[type="radio"].visually-hidden {
 	min-height: 495px;
 }
 
-.promo-slider-controls {
-	position: absolute;
-	right: 83px;
-	bottom: 239px;
-}
-
-.promo-slider-controls label {
-	font-size: 0;
-	position: relative;
-	padding-left: 12px;
-	padding-top: 10px;
-	margin-right: 18px;
-}
-
-.promo-slider-controls label:last-child {
-	margin-right: 0;
-}
-
-.promo-slider-controls label::before {
-	content: "";
-	position: absolute;
-	width: 10px;
-	height: 10px;
-	top: 0;
-	left: 0;
-	border-radius: 50%;
-	border: 1px solid black;
-	cursor: pointer;
-	z-index: 5;
-}
-
-.promo-slide-radio:checked + label::after {
-	content: "";
-	position: absolute;
-	width: 4px;
-	height: 4px;
-	left: 3px;
-	top: 3px;
-	border-radius: 50%;
-	border: 1px solid black;
-	z-index: 5;
-	cursor: pointer;
-}
-
 .promo-slider-list {
 	position: relative;
 }
@@ -2076,4 +2032,40 @@ input[type="radio"].visually-hidden {
 
 .modal-error {
   animation: shake 0.6s;
+}
+
+.promoslide-toggle {
+  width: 10px;
+  height: 10px;
+  margin-right: 21px;
+  border-radius: 50%;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.promo-slider-controls {
+	display: flex;
+	z-index: 10;
+	position: absolute;
+	right: 83px;
+	bottom: 252px;
+}
+
+.promoslide-toggle:last-of-type {
+	margin-right: 0;
+}
+
+.selected {
+  position: relative;  
+}
+
+.selected::before {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  border: 1px solid black;
+  left: 2px;
+  top: 2px;
 }
