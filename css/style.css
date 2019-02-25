@@ -713,6 +713,7 @@ input[type="radio"].visually-hidden {
 .service-slide p {
 	margin: 0;
 	padding: 0;
+	padding-right: 25px;
 	letter-spacing: 0.15px;
 }
 
@@ -746,16 +747,16 @@ input[type="radio"].visually-hidden {
 .warranty-slide::after {
 	width: 171px;
 	height: 194px;
-	top: 11px;
-	right: 6px;
+	top: -12px;
+	right: -12px;
 	background-image: url(../img/warranty.png);
 }
 
 .credit-slide::after {
 	width: 156px;
 	height: 186px;
-	top: 11px;
-	right: 6px;
+	top: -12px;
+	right: 10px;
 	background-image: url(../img/credit.png);
 }
 

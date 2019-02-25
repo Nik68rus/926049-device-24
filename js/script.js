@@ -12,7 +12,6 @@ var deliveryButton = document.querySelector(".slider-button1");
 var warrantyButton = document.querySelector(".slider-button2");
 var creditButton = document.querySelector(".slider-button3");
 
-
 var link = document.querySelector(".feedback-button");
 var popup = document.querySelector(".contact-us");
 var close = document.querySelector(".feedback-close");
