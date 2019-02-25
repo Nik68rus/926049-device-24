@@ -5,6 +5,13 @@ var slide1Toggle = document.querySelector(".promoslide1-toggle");
 var slide2Toggle = document.querySelector(".promoslide2-toggle");
 var slide3Toggle = document.querySelector(".promoslide3-toggle");
 
+var deliverySlide = document.querySelector(".delivery-slide");
+var warrantySlide = document.querySelector(".warranty-slide");
+var creditSlide = document.querySelector(".credit-slide");
+var deliveryButton = document.querySelector(".slider-button1");
+var warrantyButton = document.querySelector(".slider-button2");
+var creditButton = document.querySelector(".slider-button3");
+
 
 var link = document.querySelector(".feedback-button");
 var popup = document.querySelector(".contact-us");
@@ -52,6 +59,36 @@ slide3Toggle.addEventListener("click", function (evt) {
 	slide3.classList.add("showing");
 });
 
+deliveryButton.addEventListener("click", function (evt) {
+	evt.preventDefault();
+  deliveryButton.classList.add("curent-slide");
+  warrantyButton.classList.remove("curent-slide");
+  creditButton.classList.remove("curent-slide");
+	deliverySlide.classList.add("showing");
+	warrantySlide.classList.remove("showing");
+	creditSlide.classList.remove("showing");
+});
+
+warrantyButton.addEventListener("click", function (evt) {
+	evt.preventDefault();
+  deliveryButton.classList.remove("curent-slide");
+  warrantyButton.classList.add("curent-slide");
+  creditButton.classList.remove("curent-slide");
+	deliverySlide.classList.remove("showing");
+	warrantySlide.classList.add("showing");
+	creditSlide.classList.remove("showing");
+});
+
+creditButton.addEventListener("click", function (evt) {
+	evt.preventDefault();
+  deliveryButton.classList.remove("curent-slide");
+  warrantyButton.classList.remove("curent-slide");
+  creditButton.classList.add("curent-slide");
+	deliverySlide.classList.remove("showing");
+	warrantySlide.classList.remove("showing");
+	creditSlide.classList.add("showing");
+});
+
 try {
 	storageName = localStorage.getItem("userName");
 	storageMail = localStorage.getItem("email");
@@ -86,7 +123,6 @@ close.addEventListener("click", function (evt) {
 	popup.classList.remove("modal-error");
 }); 
 
-
 form.addEventListener("submit", function (evt) {
 	if (!userName.value||!email.value||!message.value) {
 		evt.preventDefault();
@@ -113,8 +149,6 @@ window.addEventListener("keydown", function (evt) {
 		}
 	}
 });
-
-
 
 mapLink.addEventListener("click", function (evt) {
 	evt.preventDefault();
