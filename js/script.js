@@ -1,16 +1,11 @@
-var slide1 = document.querySelector(".promo-slide1");
-var slide2 = document.querySelector(".promo-slide2");
-var slide3 = document.querySelector(".promo-slide3");
-var slide1Toggle = document.querySelector(".promoslide1-toggle");
-var slide2Toggle = document.querySelector(".promoslide2-toggle");
-var slide3Toggle = document.querySelector(".promoslide3-toggle");
+var sliderControls = document.querySelector(".promo-slider-controls");
+var slideToggles = document.querySelectorAll(".promoslide-toggle");
+var slideList = document.querySelectorAll(".promo-slide");
+var i = 0;
 
-var deliverySlide = document.querySelector(".delivery-slide");
-var warrantySlide = document.querySelector(".warranty-slide");
-var creditSlide = document.querySelector(".credit-slide");
-var deliveryButton = document.querySelector(".slider-button1");
-var warrantyButton = document.querySelector(".slider-button2");
-var creditButton = document.querySelector(".slider-button3");
+var servSliderControls = document.querySelector(".service-slider-controls");
+var slideButtons = document.querySelectorAll(".slider-button");
+var servSlideList = document.querySelectorAll(".service-slide");
 
 var link = document.querySelector(".feedback-button");
 var popup = document.querySelector(".contact-us");
@@ -28,64 +23,38 @@ var isStorageSupport = true;
 var storageName = "";
 var storageMail = "";
 
-slide1Toggle.addEventListener("click", function (evt) {
-	evt.preventDefault();
-  slide1Toggle.classList.add("selected");
-  slide2Toggle.classList.remove("selected");
-  slide3Toggle.classList.remove("selected");
-	slide1.classList.add("showing");
-	slide2.classList.remove("showing");
-	slide3.classList.remove("showing");
+sliderControls.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  var target = evt.target;
+  if (target.classList.contains('promoslide-toggle')) {
+    for (i = 0; i<slideToggles.length; i++) {
+      slideToggles[i].classList.remove('selected');
+      slideList[i].classList.remove('showing');
+    };
+    target.classList.add('selected'); 
+    for (i = 0; i<slideToggles.length; i++) {
+      if (slideToggles[i] == target) {
+        slideList[i].classList.add('showing');
+      }
+    }
+  } else return;
 });
 
-slide2Toggle.addEventListener("click", function (evt) {
-	evt.preventDefault();
-  slide1Toggle.classList.remove("selected");
-  slide2Toggle.classList.add("selected");
-  slide3Toggle.classList.remove("selected");
-	slide1.classList.remove("showing");
-	slide2.classList.add("showing");
-	slide3.classList.remove("showing");
-});
-
-slide3Toggle.addEventListener("click", function (evt) {
-	evt.preventDefault();
-  slide1Toggle.classList.remove("selected");
-  slide2Toggle.classList.remove("selected");
-  slide3Toggle.classList.add("selected");
-	slide1.classList.remove("showing");
-	slide2.classList.remove("showing");
-	slide3.classList.add("showing");
-});
-
-deliveryButton.addEventListener("click", function (evt) {
-	evt.preventDefault();
-  deliveryButton.classList.add("curent-slide");
-  warrantyButton.classList.remove("curent-slide");
-  creditButton.classList.remove("curent-slide");
-	deliverySlide.classList.add("showing");
-	warrantySlide.classList.remove("showing");
-	creditSlide.classList.remove("showing");
-});
-
-warrantyButton.addEventListener("click", function (evt) {
-	evt.preventDefault();
-  deliveryButton.classList.remove("curent-slide");
-  warrantyButton.classList.add("curent-slide");
-  creditButton.classList.remove("curent-slide");
-	deliverySlide.classList.remove("showing");
-	warrantySlide.classList.add("showing");
-	creditSlide.classList.remove("showing");
-});
-
-creditButton.addEventListener("click", function (evt) {
-	evt.preventDefault();
-  deliveryButton.classList.remove("curent-slide");
-  warrantyButton.classList.remove("curent-slide");
-  creditButton.classList.add("curent-slide");
-	deliverySlide.classList.remove("showing");
-	warrantySlide.classList.remove("showing");
-	creditSlide.classList.add("showing");
+servSliderControls.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  var target = evt.target;
+  if (target.classList.contains('slider-button')) {
+    for (i = 0; i<slideButtons.length; i++) {
+      slideButtons[i].classList.remove('curent-slide');
+      servSlideList[i].classList.remove('showing');
+    };
+    target.classList.add('curent-slide'); 
+    for (i = 0; i<slideButtons.length; i++) {
+      if (slideButtons[i] == target) {
+        servSlideList[i].classList.add('showing');
+      }
+    }
+  } else return;
 });
 
 try {
