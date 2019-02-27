@@ -1,7 +1,6 @@
 var sliderControls = document.querySelector(".promo-slider-controls");
 var slideToggles = document.querySelectorAll(".promoslide-toggle");
 var slideList = document.querySelectorAll(".promo-slide");
-var i = 0;
 
 var servSliderControls = document.querySelector(".service-slider-controls");
 var slideButtons = document.querySelectorAll(".slider-button");
@@ -27,12 +26,12 @@ sliderControls.addEventListener("click", function (evt) {
   evt.preventDefault();
   var target = evt.target;
   if (target.classList.contains('promoslide-toggle')) {
-    for (i = 0; i<slideToggles.length; i++) {
+    for (var i = 0; i<slideToggles.length; i++) {
       slideToggles[i].classList.remove('selected');
       slideList[i].classList.remove('showing');
     };
     target.classList.add('selected'); 
-    for (i = 0; i<slideToggles.length; i++) {
+    for (var i = 0; i<slideToggles.length; i++) {
       if (slideToggles[i] == target) {
         slideList[i].classList.add('showing');
       }
@@ -44,12 +43,12 @@ servSliderControls.addEventListener("click", function (evt) {
   evt.preventDefault();
   var target = evt.target;
   if (target.classList.contains('slider-button')) {
-    for (i = 0; i<slideButtons.length; i++) {
+    for (var i = 0; i<slideButtons.length; i++) {
       slideButtons[i].classList.remove('curent-slide');
       servSlideList[i].classList.remove('showing');
     };
     target.classList.add('curent-slide'); 
-    for (i = 0; i<slideButtons.length; i++) {
+    for (var i = 0; i<slideButtons.length; i++) {
       if (slideButtons[i] == target) {
         servSlideList[i].classList.add('showing');
       }
