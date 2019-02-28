@@ -193,9 +193,7 @@ input[type="radio"].visually-hidden {
 	outline: none;
 }
 
-.search-field:focus + .search-button,
-.search-button:focus,
-.search-button:active {
+.search-form:focus-within .search-button {
 	display: inline-block;
 	vertical-align: bottom;
 }
@@ -1875,7 +1873,7 @@ input[type="radio"].visually-hidden {
 
 .menu-link:hover .categories-menu,
 .catalog-link:focus + .categories-menu,
-.menu-link:focus .categories-menu {
+.menu-link:focus-within .categories-menu {
 	display: block;
 	position: absolute;
 	left: -60px;
