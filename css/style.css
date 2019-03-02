@@ -193,7 +193,8 @@ input[type="radio"].visually-hidden {
 	outline: none;
 }
 
-.search-form:focus-within .search-button {
+.search-form:focus-within .search-button,
+.search-field:focus + .search-button {
 	display: inline-block;
 	vertical-align: bottom;
 }
@@ -395,6 +396,7 @@ input[type="radio"].visually-hidden {
 
 .button {
 	display: inline-block;
+	vertical-align: bottom;
 	font-family: "Gilroy", "Arial", sans-serif;
 	font-weight: 800;
 	font-size: 18px;
@@ -1357,8 +1359,10 @@ input[type="radio"].visually-hidden {
 
 .social-button {
 	display: inline-block;
+	vertical-align: bottom;
 	box-sizing: border-box;
 	padding-left: 32px;
+	padding-top: 32px;
 	height: 32px;
 	position: relative; 
 	font-size: 0;
@@ -1568,6 +1572,7 @@ input[type="radio"].visually-hidden {
 
 .header-contacts {
 	display: inline-block;
+	vertical-align: baseline;
 }
 
 .slide-wrapper {
@@ -1586,6 +1591,7 @@ input[type="radio"].visually-hidden {
 	padding-top: 193px;
 	position: relative;
 	display: inline-block;
+	vertical-align: bottom;
 	width: 160px;
 	cursor: pointer;
 	margin-bottom: 20px;
@@ -1756,7 +1762,7 @@ input[type="radio"].visually-hidden {
 }
 
 .sitenav-line {
-	margin-bottom: 60px;
+	margin-bottom: 64px;
 	align-items: flex-end;
 }
 
@@ -1778,7 +1784,7 @@ input[type="radio"].visually-hidden {
 	width: 80px;
 	height: 7px;
 	left: 0;
-	bottom: 13px;
+	bottom: 15px;
 	background-color: #ffc600;
 }
 
@@ -1807,6 +1813,7 @@ input[type="radio"].visually-hidden {
 
 .inner-page .header-logo {
 	display: inline-block;
+	vertical-align: bottom;
 	margin-bottom: 6px;
 }
 
@@ -1900,6 +1907,7 @@ input[type="radio"].visually-hidden {
 .menu-link {
 	position: relative;
 	display: inline-block;
+	vertical-align: bottom;
 }
 
 .menu-link:hover .categories-menu,
