@@ -1439,7 +1439,7 @@ input[type="radio"].visually-hidden {
 .academy-logo {
 	position: relative;
 	padding-left: 28px;
-	padding-top: 36px;
+	padding-top: 34px;
 	font-size: 0;
 	line-height: 0;
 }
@@ -1447,13 +1447,13 @@ input[type="radio"].visually-hidden {
 .academy-logo::before {
 	content: "";
 	width: 28px;
-	height: 36px;
+	height: 34px;
 	position: absolute;
-	left: 0;
+	right: 0;
 	top: 0;
 	background-image: url("../img/logo-html.svg");
 	background-repeat: no-repeat;
-	background-position: 0 0;
+	background-position: center center;
 }
 
 .academy-logo:hover::before,
@@ -1964,8 +1964,8 @@ input[type="radio"].visually-hidden {
 }
 
 .social-line {
-	width: 860px;
 	padding-left: 300px;
+	padding-right: 1px;
 }
 
 .footer-user-navigation {
